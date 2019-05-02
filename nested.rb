@@ -123,10 +123,11 @@ def adding_to_dennis
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C","Assembly"]
+          :languages => ["C"]
         }
      }
-      programmer_hash[:alan_kay][:languages] << "Assembly"
+     programmer_hash.each do|name|
+      programmer_hash[:alan_kay][:languages] << name
      programmer_hash
-
+   end
 end
